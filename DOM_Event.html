@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="Dom-Event.js"></script>
+
+    <h1> Inline Event</h1>
+    <button onclick="alert('Welcome')">greeting</button>
+    <button ondblclick="alert('Welcome Js Cource')">greeting again</button>
+    <button onmouseover="alert('Welcome Again')">greeting</button>
+
+
+    <!--  ====  Dom . Event Handler =====  -->
+
+    <h1>Dom Event Handler </h1>
+    <button id="mybtn"> greeting </button>
+    <button id="mybtn1"> greeting again </button>
+
+    <!-- ===   addEventListener Event handler  ======== -->
+    <h1>Dom addEventListener handling</h1>
+    <button id="mybtn2"> greeting </button>
+    <button id="mybtn3"> greeting again </button>
+
+    <script>
+        document.getElementById("mybtn").onclick = function (){
+    
+            alert('welcome boos ');
+        };
+
+        document.getElementById("mybtn1").onmouseover = function (){
+    
+                alert('welcome boos again');
+        };
+
+        document.getElementById("mybtn2").addEventListener("click",function(){
+            alert("word best javascript cource ");
+        });
+
+        document.getElementById("mybtn3").addEventListener("mouseover",() => {
+            alert(" secound time word best javascript cource ");
+            
+        });
+
+
+    </script>
+
+</body>
+</html>
