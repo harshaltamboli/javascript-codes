@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+  
+   // spread op
+
+// const name="bhavesh";
+// const name1="harshal";
+
+// const combined=[...name,...name1];
+// console.log(combined);
+
+
+
+function name(...value){
+  total=0;
+  for(let col of value){
+       total -=col;
+  }
+
+  return total;
+}
+console.log(name( 23 ,4, ));
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
